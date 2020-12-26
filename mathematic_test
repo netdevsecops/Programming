@@ -1,0 +1,22 @@
+#mathematic
+
+try:
+    print("===First Number===")
+    number1=int(input("first number: "))
+    print("===Second Number===")
+    number2=int(input("second number: "))
+    print("===Choose symbol(-+/*)===")
+    symbol=input("Please symbol: " )
+    if symbol=="+":
+        print(number1 + number2)
+    elif symbol =="-":
+        print(number1 - number2)
+    elif symbol=="*":
+        print(number1 * number2)
+    if symbol=="/":
+        if number2 !=0:
+            print(number1 / number2)
+        else:
+            print("Wrong Number ZERO")
+except:
+    print("It's not a number, start program again pls")
