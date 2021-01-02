@@ -14,7 +14,7 @@ try:
     elif symbol=="*":
         print(number1 * number2)
     if symbol=="/":
-        if number2 !=0:
+        if number2 !=0:                  #if number doesn't ==0, you can /, but if number==0 you can't not and print("Wrong Number")
             print(number1 / number2)
         else:
             print("Wrong Number ZERO")
