@@ -1,0 +1,26 @@
+import random
+
+
+print("-----------Make Up a number between 1-100-----------")
+print("---If you want exit, you must enter 0, but if you want start again, you must enter 1 ---")
+case=random.randint(1,100)
+attempt=0
+number=0          
+try:
+    while number!=case:
+        number=int(input("Your Number:  "))
+        attempt=attempt+1
+        if number==0:
+            print("Correct Answer is: " + str(case) + ", Bye")
+            break
+        if number==1:
+            print("You reset the program, start again ")
+            continue
+        if number<case:
+            print(str(number) + " is smallest number")
+        elif number>case:
+            print(str(number) + " is a large number")
+        elif number==case:
+            print(str(number) + " is OK")
+except:
+    print(" ERROR, Please enter number, not string...")
