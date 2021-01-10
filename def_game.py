@@ -13,6 +13,7 @@ def start_game(attempt, number) :
 			break
 		if number==1:
 			print("You Reset the program, start again")
+			attempt=0
 			continue
 		if number < case:
 			print(str(number) + ' is smallest number')
